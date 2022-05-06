@@ -1,0 +1,265 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: orange;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+p{
+    font-family: cursive;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-family: cursive;
+}
+
+.navbar-brand img{
+    width: 100px;
+}
+
+.navbar-collapse{
+    flex-grow: unset;
+}
+
+.nav-link {
+    border-radius: 8px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    font-size: 24px !important;
+    color: white !important;
+    font-family: cursive !important;
+}
+
+.navbar {
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    background: turquoise;
+    color: whitesmoke;
+    transition: all .2s ease-out;
+    box-shadow: 0 0 15px turquoise;
+    border-radius: 5px;
+}
+
+.navbar .navbar-nav .nav-link:active{
+    background-color: turquoise;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+
+.intro img{
+    width: 300px;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+
+.name{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.position{
+    font-size: 70px;
+    text-align: center;    
+}
+
+.location{
+    font-size: 65px;
+    text-align: center;   
+    color: red; 
+}
+
+.description{
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer {
+    padding: 1.5rem 1rem;
+    background-color: rgba(255, 115, 0, 0.918);
+    margin-bottom: 0;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 15px;
+  }
+  
+  .footer li {
+    list-style-type: none;
+    margin: 6px 0;
+  }
+  
+  .footer li a {
+    font-size: 14px;
+    color: rgb(184, 31, 31);
+    text-decoration: none;
+  }
+  
+  .footer li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer button {
+    padding: 8px 20px;
+    background-color: #df9d0ec9;
+    color: white;
+    border: 1px solid rgb(189, 118, 37);
+  }
+  
+  .footer button:hover {
+    background-color: #4d4d4d;
+  }
+  
+  .footer .footer-end {
+    padding: 1rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .footer .footer-end p {
+    color: white;
+    font-size: 12px;
+  }
+
+  .footer .footer-end a {
+      width: 1rem;
+      height: 1rem;
+  }
+
+  .links > img {
+      margin: auto 10px;
+  }
+  /*gallery*/
+  .base {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: black;
+    border-radius: 40px;
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .footeer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+  }
+
+  .main-scroll-div {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .cover {
+      position: relative;
+      width: 90%;
+      height: 50%;
+  }
+
+  .cover::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      z-index: 99;
+      height: 100%;
+      width: 150px;
+      background-image: linear-gradient(90deg, black, transparent);
+  }
+
+  .cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg, black, transparent);
+}
+
+  .scroll-images {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      overflow: auto;
+      position: relative;
+      scroll-behavior: smooth;
+  }
+
+  .child {
+      min-width: 500px;
+      height: 400px;
+      margin: 1px 10px;
+      cursor: pointer;
+      border: 1px solid rgb(247, 228, 228, .3);
+      overflow: hidden;
+  }
+
+  .scroll-images::-webkit-scrollbar {
+      -webkit-appearance: none;
+  }
+
+  .child-img {
+      width: 100%;
+      height: 100%;
+  }
+
+
+.icon {
+    color: rgb(53, 244, 53);
+    background-color: black;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: red;
+}
+
+@media(max-width:756px) {
+    .position{
+        font-size: 35px;
+        text-align: center;    
+    }
+    
+    .location{
+        font-size: 30px;
+        text-align: center;   
+        color: red; 
+    }
+
+    .intro img{
+        width: 400px;
+        border-radius: 10%;
+        overflow: hidden;
+    }
+}
